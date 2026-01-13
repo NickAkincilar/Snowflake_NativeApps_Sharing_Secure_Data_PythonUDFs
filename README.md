@@ -1,6 +1,10 @@
 # Snowflake Native App: Customer Data UDF Sharing
 
-A Snowflake Native Application that demonstrates **secure data sharing with User-Defined Functions (UDFs)** without data replication which also works with cross cloud auto-fullfillment if the consumer is in a different cloud or region. This app showcases how to share live data through secure views while providing custom transformation functions to consumers where the provider's proprietry function code(IP) is fully secure and can't be viewed by consumers.
+A Snowflake Native Application that demonstrates **secure data sharing with User-Defined Functions (UDFs)** without data replication which also works with cross cloud auto-fullfillment if the consumer is in a different cloud or region. 
+
+This app showcases how to share live data through secure views along with custom Python & Java functions functions to view the data in that share to consumers where the provider's proprietry function code(IP) is fully secure and can't be viewed by consumers.
+
+These custom functions can be for variaty of reasons such as for ML, AI, Decryption & etc.
 
 ## 🎯 What This App Does
 
