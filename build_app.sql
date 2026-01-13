@@ -84,11 +84,15 @@ CREATE APPLICATION CUSTOMER_REVERSE_APP
 -- ============================================================================
 -- STEP 10: TEST THE APPLICATION
 -- ============================================================================
+
+-- Using the secure view which uses the function to display data in a column
 SELECT * FROM CUSTOMER_REVERSE_APP.APP_CODE.CUST_WITH_JS_UDF;
 
-SELECT CUSTOMER_REVERSE_APP.APP_CODE.REVERSE_STRING('NICKSRERE') AS REVERSED;
 
-SELECT CUSTOMER_REVERSE_APP.APP_CODE.REVERSE_STRING_PYTHON('NICKSRERE') AS REVERSED;
+-- Using the function directly
+SELECT CUSTOMER_REVERSE_APP.APP_CODE.REVERSE_STRING('THIS_IS_TEST') AS REVERSED;
+
+SELECT CUSTOMER_REVERSE_APP.APP_CODE.REVERSE_STRING_PYTHON('THIS_IS_TEST') AS REVERSED;
 
 -- ============================================================================
 -- CONSUMER INSTALLATION (run in consumer account after sharing)
